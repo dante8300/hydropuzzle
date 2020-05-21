@@ -23,7 +23,7 @@
     "react-native-progress": "^3.5.0",
     "react-native-store-review": "^0.1.5",
     "react-native-typewriter": "^0.5.4",
-    "react-native-video": "^4.2.0",
+    "react-native-video": "^5.0.0",
     "react-timeout": "^1.1.2",
     "shuffle-array": "^1.0.1"
   },

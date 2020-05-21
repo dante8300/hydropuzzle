@@ -15,11 +15,11 @@ workflows:
       - node --version
       - npm install npm
       - npm install 
-      - brew install watchman
-      - brew install flow
       - npm install -g react-native-cli
-      - react-native bundle --platform android --dev false --entry-file android/index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
-
+      - react-native bundle --platform android --dev true --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+      - android/./agradlew assembleDebug 
+      
+      #- react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
     artifacts:
       - build/**/outputs/**/*.apk
       - build/**/outputs/**/*.aab
